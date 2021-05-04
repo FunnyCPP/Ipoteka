@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_background"
+    tools:context=".ui.main.auth.AuthFragment" >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_auth_log_in"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="@dimen/margins"
+        android:layout_marginEnd="@dimen/margins"
+        android:layout_marginBottom="@dimen/margins"
+        android:background="@drawable/background_white"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_auth_password"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="@dimen/margins"
+        android:layout_marginEnd="@dimen/margins"
+        android:layout_marginBottom="@dimen/margins"
+        android:background="@drawable/background_white"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPersonName"
+        android:padding="@dimen/padding"
+        app:layout_constraintBottom_toTopOf="@+id/btn_auth_log_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_auth_number"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginStart="@dimen/margins"
+        android:layout_marginEnd="@dimen/margins"
+        android:layout_marginBottom="@dimen/margins"
+        android:background="@drawable/background_white"
+        android:ems="10"
+        android:hint="@string/number"
+        android:inputType="textPersonName"
+        android:padding="@dimen/padding"
+        app:layout_constraintBottom_toTopOf="@+id/edit_auth_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "992208773235",
+    "project_id": "ipoteka-95f06",
+    "storage_bucket": "ipoteka-95f06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992208773235:android:abbc3056021ff2beac8a06",
+        "android_client_info": {
+          "package_name": "com.codart.ipoteka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992208773235-envcc0jgqb9hbiof8bv8es6auatag3u3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9A-SEWSoPPv2o-cksgCbBel0vBUW2Wa8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992208773235-envcc0jgqb9hbiof8bv8es6auatag3u3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margins">16dp</dimen>
+    <dimen name="btn_height">50dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="margin_middle">24dp</dimen>
+    <dimen name="category_size">160dp</dimen>
+    <dimen name="switch_height">40dp</dimen>
+</resources>

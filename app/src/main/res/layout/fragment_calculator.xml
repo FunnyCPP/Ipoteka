@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_white"
+    tools:context=".ui.main.calculator.CalculatorFragment">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_calculator_continue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margins"
+        android:layout_marginEnd="@dimen/margins"
+        android:layout_marginBottom="@dimen/margins"
+        android:background="@drawable/background_orange_btn"
+        android:text="@string/input_continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_calculator_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margins"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/car_title"
+        android:textColor="#023047"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_calculator_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margins"
+        android:src="@drawable/ic_back_black"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_calculator_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_calculator_title" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginEnd="@dimen/padding"
+        android:background="@drawable/background_calculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_calculator_title">
+
+        <TextView
+            android:id="@+id/txt_calcualtor_sum_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/calculator_sum"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/calculator_edit_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:background="@drawable/background_white"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="@dimen/padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_calcualtor_sum_title" />
+
+        <RadioGroup
+            android:id="@+id/calculator_toggle_currencies"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/switch_height"
+            android:layout_marginStart="@dimen/margins"
+            android:background="@drawable/background_toogle"
+            android:checkedButton="@id/calculator_grn"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/calculator_edit_sum"
+            app:layout_constraintStart_toEndOf="@+id/calculator_edit_sum"
+            app:layout_constraintTop_toTopOf="@+id/calculator_edit_sum">
+
+            <RadioButton
+                android:id="@+id/calculator_grn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toogle_widget_background"
+                android:button="@null"
+                android:checked="false"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/grn"
+                android:textColor="@color/switch_color"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/calculator_usd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toogle_widget_background"
+                android:button="@null"
+                android:clickable="false"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/usd"
+                android:textColor="@color/switch_color" />
+        </RadioGroup>
+
+        <SeekBar
+            android:id="@+id/calculator_seek_sum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:layout_marginEnd="@dimen/margins"
+            android:background="@android:color/transparent"
+            android:indeterminate="false"
+            android:max="5000"
+            android:maxWidth="5dp"
+            android:maxHeight="5dp"
+            android:minWidth="5dp"
+            android:minHeight="5dp"
+            android:progressDrawable="@drawable/custom_seek_bar"
+            android:thumb="@drawable/custom_thumb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculator_edit_sum" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/calculator_months"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculator_seek_sum" />
+
+        <EditText
+            android:id="@+id/calculator_edit_months"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:background="@drawable/background_white"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="@dimen/padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <RadioGroup
+            android:id="@+id/toggle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/switch_height"
+            android:layout_marginStart="@dimen/margins"
+            android:background="@drawable/background_toogle"
+            android:checkedButton="@id/search_2"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/calculator_edit_months"
+            app:layout_constraintStart_toEndOf="@+id/calculator_edit_months"
+            app:layout_constraintTop_toTopOf="@+id/calculator_edit_months">
+
+            <RadioButton
+                android:id="@+id/search_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toogle_widget_background"
+                android:button="@null"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="Search"
+                android:textColor="@color/switch_color" />
+
+            <RadioButton
+                android:id="@+id/offer_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toogle_widget_background"
+                android:button="@null"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="Offers"
+                android:textColor="@color/switch_color" />
+        </RadioGroup>
+
+        <SeekBar
+            android:id="@+id/calculator_seek_months"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:maxWidth="5dp"
+            android:maxHeight="5dp"
+            android:minWidth="5dp"
+            android:minHeight="5dp"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:layout_marginEnd="@dimen/margins"
+            android:progressDrawable="@drawable/custom_seek_bar"
+            android:thumb="@drawable/custom_thumb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculator_edit_months" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/calculator_program"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculator_seek_months" />
+
+        <RadioGroup
+            android:id="@+id/calculator_toggle_program"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/switch_height"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:layout_marginEnd="@dimen/margins"
+            android:background="@drawable/background_toogle"
+            android:checkedButton="@id/calculator_program_1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+            <RadioButton
+                android:id="@+id/calculator_program_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toogle_widget_background"
+                android:button="@null"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/calculator_program_car_1"
+                android:textColor="@color/switch_color" />
+
+            <RadioButton
+                android:id="@+id/calculator_program_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toogle_widget_background"
+                android:button="@null"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/calculator_program_car_2"
+                android:textColor="@color/switch_color" />
+        </RadioGroup>
+
+
+        <RadioGroup
+            android:id="@+id/calculator_toggle_variants"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/switch_height"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:layout_marginEnd="@dimen/margins"
+            android:background="@drawable/background_toogle"
+            android:checkedButton="@id/calculator_variant_1"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+            <RadioButton
+                android:id="@+id/calculator_variant_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toogle_widget_background"
+                android:button="@null"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/calculator_variant_car_1"
+                android:textColor="@color/switch_color" />
+
+            <RadioButton
+                android:id="@+id/calculator_variant_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toogle_widget_background"
+                android:button="@null"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:text="@string/calculator_variant_car_2"
+                android:textColor="@color/switch_color" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/calculator_variants"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculator_toggle_program" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/calculations_payment"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculator_toggle_variants" />
+
+        <TextView
+            android:id="@+id/calculator_txt_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margins"
+            android:layout_marginTop="@dimen/margins"
+            android:layout_marginBottom="@dimen/margins"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_calculator_program"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="textView14,calculator_toggle_program" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

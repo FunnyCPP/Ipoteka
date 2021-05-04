@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ipoteka</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="log_in">Log in</string>
+    <string name="email">E-mail</string>
+    <string name="password">Пароль</string>
+    <string name="app_name_locolized">Ипотека</string>
+    <string name="advice1_categories">Выберите услугу, которой хотите воспользоваться</string>
+    <string name="categories_sailors_title">Кредит морякам</string>
+    <string name="categories_sailors_desc">процентная ставка от 3 %</string>
+    <string name="categories_home_title">Под залог недвижимости</string>
+    <string name="categories_home_desc">процентная ставка от 1.5 %</string>
+    <string name="categories_cars_title">Под залог авто</string>
+    <string name="categories_cars_desc">процентная ставка от 2 %</string>
+    <string name="advice2_categories">Не знаешь что тебе нужно?<br/>Оставь заявку и мы наберём</string>
+    <string name="advice3_categories">Для продолжения необходимо выбрать вариант кридита</string>
+    <string name="name">Имя</string>
+    <string name="number">Номер телефона</string>
+    <string name="send">Отправить</string>
+    <string name="profile_name_default">Бойко Кирилл</string>
+    <string name="profile_procent_title_default">Суммарный %</string>
+    <string name="profile_procent_default">22 000%</string>
+    <string name="profile_sum_title_default">Сумма пени</string>
+    <string name="profile_sum_default">25 526</string>
+
+    <string name="cell_profile_date_default">01.02.2021</string>
+    <string name="cell_profile_sum_title">Сумма% в месяц</string>
+    <string name="cell_profile_sum_default">450$</string>
+    <string name="cell_profile_penya_title">Пеня</string>
+    <string name="cell_profile_penya_default">0</string>
+    <string name="cell_profile_date_transaction_title">Дата оплаты</string>
+    <string name="cell_profile_date_transaction_default">08 февраля</string>
+
+    <string name="input_surname_title">Фамилия</string>
+    <string name="input_name_title">Имя</string>
+    <string name="input_parents_title">Отчество</string>
+    <string name="input_number_title">Номер телефона</string>
+    <string name="input_email_title">Електронная почта</string>
+    <string name="input_surname">Иванов</string>
+    <string name="input_name">Иван</string>
+    <string name="input_parents">Иванович</string>
+    <string name="input_number">+381234567</string>
+    <string name="input_email">ivanov@gmail.com</string>
+    <string name="input_continue">Продолжить</string>
+    <string name="input_title_default">Под залог авто</string>
+
+    <string name="calculator_sum">Сумма кредита</string>
+    <string name="calculator_months">Срок в месяцах</string>
+    <string name="calculator_program">Програма кредитирования</string>
+    <string name="calculator_variants">Варианты погашения</string>
+    <string name="calculations_payment">Ежимесячный платеж</string>
+    <string name="grn">ГРН</string>
+    <string name="usd">USD</string>
+    <string name="calculator_program_car_1">Авто на ходу</string>
+    <string name="calculator_program_car_2">Авто на стоянке</string>
+    <string name="calculator_variant_car_1">Только проценты</string>
+    <string name="calculator_variant_car_2">Частями</string>
+    <string name="car_title">Под залог авто</string>
+</resources>
